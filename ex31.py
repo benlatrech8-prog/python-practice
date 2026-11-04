@@ -14,7 +14,8 @@ while True:
         tl.save("task.json")
         print("Added")
     elif task == 2:
-        print(tl.pending())
+        for title in tl.pending():
+            print("-",title)
     elif task == 3:
         title=input("Enter the title of task you completed :").strip()
         tl.complete(title)
