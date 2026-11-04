@@ -14,7 +14,7 @@ class TaskList():
     def __init__(self):
         self.tasks=[]
     def add(self,task):
-            self.tasks.append(task)
+        self.tasks.append(task)
 
     def find(self,title):
         for t in self.tasks:
@@ -35,7 +35,6 @@ class TaskList():
             print("Task Not Found")
         else:
             self.tasks.remove(task)
-
     def pending(self):
         pen=[]
         for t in self.tasks:
